@@ -1,0 +1,368 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@1,700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;700&display=swap");
+
+:root {
+    --primary-color: #1F2937;
+    --dark-gray: #9CA3AF;
+    --off-white: #F3F4F6;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: var(--off-white);
+
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    background-color: rgb(229 260 242 / 0.83);
+    display: flex;
+    height: 100%;
+    width: 100%;
+    /* background-image: url(https://png.pngtree.com/thumb_back/fh260/background/20210324/pngtree-abstract-memphis-playful-portfolio-pink-image_593418.jpg); */
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.sidebar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--primary-color);
+    width: 100%;
+    color: white;
+    transform: translate(0px, -80px);
+    transition: 0.3s ease-in;
+}
+
+.sidebargo {
+    transform: translate(0px, 0px);
+}
+
+.hamburger {
+    position: absolute;
+    left: 1231px;
+    top: 72px;
+    /* background-color: grey; */
+}
+
+.ham {
+    margin: -7px;
+    margin-top: 2px;
+    cursor: pointer;
+}
+
+.cross {
+    margin-left: -4px;
+    cursor: pointer;
+    position: absolute;
+    top: -72px;
+    height: 35px;
+}
+
+
+.logo {
+    margin-left: 30px;
+
+}
+
+.logo img {
+    height: 12vh;
+    margin-left: 15px;
+    display: block;
+}
+
+.menu {
+    display: flex;
+    justify-content: center;
+}
+
+.menu div {
+    margin-right: 20px;
+    font-size: 22px;
+}
+
+.menu div i {
+    margin-right: 10px;
+}
+
+.menu div a {
+    text-decoration: none;
+    color: white;
+}
+
+.menu div a:hover {
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+.mylogo {
+    position: absolute;
+}
+
+.info {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    background-color: var(--off-white);
+    margin-top: -43px;
+    height: 110vh;
+}
+
+.myinfo {
+    font-size: 35px;
+    display: contents;
+    /* margin: 0px;
+    padding: 8px;
+    color: black; */
+
+}
+
+.img1 {
+    height: 66vh;
+    border-radius: 220px;
+    width: 30vw;
+}
+
+.social img {
+    margin-top: 30px;
+}
+
+.social img:hover {
+    background-color: white;
+    font-weight: bold;
+}
+
+.buttons a button {
+    height: 39px;
+    width: 125px;
+    border-radius: 20px;
+    background-color: rgb(57, 57, 254);
+    color: white;
+    font-weight: bold;
+    margin-top: 30px;
+}
+
+.buttons a button:hover {
+    cursor: pointer;
+    background-color: rgb(57, 57, 254);
+    font-size: 14px;
+}
+
+.footer {
+    background-color: var(--primary-color);
+    text-align: center;
+    padding: 2rem 1rem;
+    color: white;
+    border-top-right-radius: 1rem;
+}
+
+.footer-header {
+    font-weight: bold;
+    font-size: large;
+}
+
+.footer ul {
+    padding-inline-start: 0px;
+}
+
+.list-item {
+    display: inline;
+    padding: 0rem 0.5rem;
+}
+
+.list-item:hover {
+    text-decoration: underline;
+
+}
+
+.list-item a {
+    color: white;
+    text-decoration: none;
+}
+
+@media (max-width: 1000px) {
+    .sidebargo {
+        position: absolute;
+        list-style: none;
+        transform: translate(-1px, 0px);
+    }
+
+    .info {
+        align-items: center;
+        justify-content: space-evenly;
+        background-color: rgb(188, 25, 25);
+        color: black;
+        height: 89vh;
+        width: 100vw;
+        margin: 35px 75px;
+        color: aliceblue;
+    }
+
+    .hamburger {
+        display: none;
+    }
+}
+
+/*............contact.html_ css...........*/
+
+.contact-info {
+    text-align: center;
+    width: 100%;
+    height: 100vh;
+    margin-top: 27px;
+}
+
+.form,
+.contact-input {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.input-box {
+    margin: 30px;
+    padding: 12px;
+    border: none;
+    border-bottom: 2px solid black;
+    width: 30vw;
+}
+
+.send-button button {
+    padding: 10px;
+    width: 100px;
+    margin: -10px;
+    font-size: 20px;
+    font-weight: bold;
+    border-radius: 35px;
+    border: 0.1px solid black;
+    justify-content: flex-start;
+    position: absolute;
+    left: 441px;
+    top: 560px;
+}
+
+.send-button button:hover {
+    cursor: pointer;
+    background-color: var(--off-white);
+    color: black;
+    font-weight: bold;
+    border: 1px solid black;
+}
+
+
+/* **********************about styles******************* */
+
+
+.about-info {
+    /* background-color: antiquewhite; */
+    height: 120vh;
+}
+
+.info0 {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    width: 80vw;
+    margin-left: 8vw;
+}
+
+.info1 {
+    /* border: 2px solid black; */
+    width: 26vw;
+}
+
+.info1 img {
+    height: 66vh;
+    width: 29vw;
+}
+
+.info1 div h1 {
+    margin-top: 6rem;
+    margin-left: -6rem;
+    font-size: 3rem;
+    line-height: 1.2;
+    margin-bottom: 3rem;
+    /* font-family: Baskerville, serif; */
+    font-family: Brandon-reg, sans-serif;
+
+}
+
+.text {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    font-size: 1.8rem;
+    line-height: 50px;
+    margin-top: 140px;
+    margin-left: 75px;
+    font-family: Brandon-reg, sans-serif;
+
+
+}
+
+.about-info footer {
+    background-color: black;
+    color: white;
+    text-align: center;
+    height: 60px;
+}
+
+
+/* *****************Skills style************** */
+
+.skills-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: var(--off-white);
+    font-family: "Josefin Sans", sans-serif;
+}
+
+.skill-info div {
+    margin: 30px;
+    font-size: 22px;
+}
+
+/* ****************Projects styles*************** */
+
+.porject-container {
+    height: 80vh;
+    /* display: flex;
+    align-items: center; */
+    justify-content: center;
+    background-color: var(--off-white);
+    font-family: "Josefin Sans", sans-serif;
+}
+
+.project-info {
+    margin: 150px;
+    font-size: 22px;
+    display: flex;
+    flex-direction: column;
+}
+
+.project-info h2 {
+    line-height: 70px;
+}
+
+.project-info p a button {
+    height: 38px;
+    width: 104px;
+    border-radius: 14px;
+    background-color: var(--primary-color);
+    color: white;
+    font-weight: bold;
+    margin-top: 15px;
+    cursor: pointer;
+}
